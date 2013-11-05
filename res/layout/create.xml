@@ -6,11 +6,24 @@
         android:layout_height="fill_parent"
         android:orientation="vertical" >
 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carpets" />
+
+        <TextView
+            android:id="@+id/resultat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Directori dels Arxius."
+            android:text="Carpeta d'arxius a llegir:"
             android:textAppearance="?android:attr/textAppearanceLarge" 
             android:layout_gravity="center"/>
 
@@ -18,14 +31,14 @@
             android:id="@+id/direccio"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-/>
+            android:text="ReadFolder"
+            />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nom de l'arxiu:"
+            android:text="Nom arxiu resultant"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_gravity="center"/>
 
@@ -33,8 +46,7 @@
             android:id="@+id/nomArxiu"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-/>
+            android:text="Arxiu.txt"/>
 
         <Button
             android:id="@+id/button1"

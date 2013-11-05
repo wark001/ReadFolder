@@ -18,10 +18,26 @@ public class Pare {
 		
 	}
 	
+	public String[] getNomArxiu() {
+		return nomArxiu;
+	}
+
+	public void setNomArxiu(String[] nomArxiu) {
+		this.nomArxiu = nomArxiu;
+	}
+
+	public String[] getContingutArxiu() {
+		return contingutArxiu;
+	}
+
+	public void setContingutArxiu(String[] contingutArxiu) {
+		this.contingutArxiu = contingutArxiu;
+	}
+	
 	public void listFilesForFolder(final File folder) {
 	    for (final File fileEntry : folder.listFiles()) {
 	        if (fileEntry.isDirectory()) {
-	            listFilesForFolder(folder);   
+	         //   listFilesForFolder(folder);   
 	        } else {
 	        	nomArxiu[numerArxiu]=fileEntry.getName();	
 	        	llegeix(fileEntry);
@@ -55,7 +71,6 @@ public class Pare {
             System.err.println("Ocurrio un error: " + e.getMessage());
         }
 	}
-
 
 	public void escritura(){
 		FileWriter fichero = null;
