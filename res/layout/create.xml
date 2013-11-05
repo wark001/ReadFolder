@@ -1,0 +1,46 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Directori dels Arxius."
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/direccio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'arxiu:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/nomArxiu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear arxiu" 
+            android:onClick="guardar"/>
+
+    </LinearLayout>
